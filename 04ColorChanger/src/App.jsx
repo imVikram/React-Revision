@@ -4,12 +4,17 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [color, setColor] = useState('Olive')
 
   return (
     <>
-    
+    <div className="w-full h-screen duration-200">
+      style={{backgroundColor : color}}
+    </div>
+
+    <div className='fixed flex flex-wrap justify-center bottom-12 inset-x-2 px-2'></div>
     </>
+    
   )
 }
 
